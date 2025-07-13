@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #4a90e2;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #357ab7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mustafa Morsy</h1>
+    <p>Web Developer | Designer | Learner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Hi! I am Mustafa Morsy. I am a 4th year (Senior) Software Engineering student. I am passionate about AI, Robotics and Information Security. I've made few project during my study.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <p>- Phone price predictor (using ML)</p>
+        
+        <p>- Sign language predictor (using DL)</p>
+        
+        <p>- Portfolio Website</p>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mustafamorsy@posta.mu.edu.tr">mustafamorsy@posta.mu.edu.tr</a></p>
+      <button onclick="sayHello()">Press Me</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mustafa Morsy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert('Hello! Thanks for visiting my site:)');
+    }
+  </script>
+</body>
+</html>
